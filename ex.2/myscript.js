@@ -14,11 +14,11 @@ document.getElementById("demo2").innerHTML = "Tu hai estratto il numero:" + Seco
 
 //  confronta tra il 1°ed il 2° numero il più alto viene visualizzato a video
 if (FirstNum > SecondNum) {
-  document.getElementById('winner').innerHTML = "Peccato, ha vinto il computer:" + FirstNum
+  document.getElementById('winner').innerHTML = "Peccato, ha vinto il computer" + FirstNum
 }
 
 else if (FirstNum < SecondNum) {
-  document.getElementById('winner').innerHTML = "Complimenti, Hai Vinto!!!:" + SecondNum
+  document.getElementById('winner').innerHTML = "Complimenti, Hai Vinto!!!" + SecondNum
 }
 
 else {
