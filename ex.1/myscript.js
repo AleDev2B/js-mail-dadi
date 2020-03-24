@@ -9,20 +9,20 @@ console.log(UserMailReg);
 var UserMailStart = prompt ("Gentile Frenzo, inserisci la tua email per accedere ai ns servizi")
 
 console.log(UserMailStart);
-  //  controllo se l'indirizzo è presente nella ns lista delle email attive (se si)
-  while (UserMailStart = UserMailReg.forEach(item, i)) {
-    alert("Gentile Frenzo, il tuo indirizzo non risulta nei ns database, ti consigliamo pertanto di registrarti per aver accesso ai ns servizi.")
+
+// dichiarazione variabile booleana check
+check = false;
+
+for (var i = 0; i < UserMailReg.length; i++) {
+  if (UserMailStart === UserMailReg[i]) {
+    check = true;
   }
+}
 
-// var UserMailStart = prompt ("Gentile Frenzo, inserisci la tua email per accedere ai ns servizi");
+if (check) {
+  msg = "Accesso consentito"
+} else {
+  msg = "Accesso non consentito"
+}
 
-    // alert("Grazie" + "" + UserMailStart + "premi ok per accedere ai nostri servizi");
-
-  // // controllo indirizzo presente nella lista (se no)
-  //   if (UserMailStart != UserMailReg[""] ) {
-
-  //
-  //     // se indirizzo non presente, facciamo riapparire popup con richiesta inserimento
-
-  //
-  //   }
+document.getElementById('mail-check').innerHTML = msg
