@@ -10,17 +10,13 @@ var UserMailStart = prompt ("Gentile Frenzo, inserisci la tua email per accedere
 
 console.log(UserMailStart);
   //  controllo se l'indirizzo è presente nella ns lista delle email attive (se si)
-
-  for (var i = 0; i < UserMailReg.length; i++) {
-    if (UserMailStart = UserMailReg) {
-      alert("Premi ok per accedere ai nostri servizi");
-    }
-    else {
-      var UserMailStart = prompt ("Gentile Frenzo, inserisci la tua email per accedere ai ns servizi")
-
-    }
+  while (UserMailStart = UserMailReg.forEach(item, i)) {
+    alert("Gentile Frenzo, il tuo indirizzo non risulta nei ns database, ti consigliamo pertanto di registrarti per aver accesso ai ns servizi.")
   }
 
+// var UserMailStart = prompt ("Gentile Frenzo, inserisci la tua email per accedere ai ns servizi");
+
+    // alert("Grazie" + "" + UserMailStart + "premi ok per accedere ai nostri servizi");
 
   // // controllo indirizzo presente nella lista (se no)
   //   if (UserMailStart != UserMailReg[""] ) {
